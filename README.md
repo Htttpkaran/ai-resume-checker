@@ -64,22 +64,10 @@ npm run dev
 
 ## 🚢 Production Deployment
 
-**Complete deployment guide:** [DEPLOYMENT.md](DEPLOYMENT.md)
-
 **Quick steps:**
 1. Deploy backend to Render (`backend/` folder)
-2. Deploy frontend to Vercel (`frontend/` folder)  
-3. Update CORS with Vercel URL
-
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed Render + Vercel instructions.
-
----
-
-## 📚 Documentation
-
-- **[DOCUMENTATION.md](DOCUMENTATION.md)** - Complete technical documentation
-- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Production deployment guide (Render + Vercel)
-- **[DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md)** - Deployment checklist
+2. Deploy frontend to Vercel (`frontend/` folder)
+3. Update backend CORS with your frontend URL
 
 ---
 
@@ -98,7 +86,7 @@ ai-resume-checker/
 │       ├── pages/
 │       ├── components/
 │       └── services/
-└── DOCUMENTATION.md      # Full docs
+└── README.md             # Project overview
 ```
 
 ---
@@ -109,6 +97,20 @@ ai-resume-checker/
 - CORS restricted to frontend URL
 - File size limits enforced (5MB)
 - File type validation (PDF/DOCX only)
+
+---
+
+## 🌐 Deployment Link
+
+Frontend: https://ai-resume-checker-frontend.onrender.com
+
+---
+
+## 🌐 Live Demo
+
+**Frontend:** https://ai-resume-checker-frontend.onrender.com  
+**Backend API:** https://ai-resume-checker-backend-ru45.onrender.com/api  
+**Health Check:** https://ai-resume-checker-backend-ru45.onrender.com/api/health
 
 ---
 
