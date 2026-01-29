@@ -1,0 +1,26 @@
+# Render Blueprint for AI Resume Checker Backend
+# Optional: Use this file for Infrastructure as Code deployment
+# Learn more: https://render.com/docs/blueprint-spec
+
+services:
+  # Backend API Service
+  - type: web
+    name: ai-resume-checker-backend
+    runtime: node
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: MAX_FILE_SIZE
+        value: 5242880
+      - key: GEMINI_API_KEY
+        sync: false # Must be set manually in Render dashboard
+      - key: FRONTEND_URL
+        sync: false # Set to your Vercel URL after deployment
