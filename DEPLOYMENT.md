@@ -113,9 +113,9 @@ git push origin main
 
 7. **Test Backend**
 
-   Test health endpoint:
-   ```bash
-   curl https://ai-resume-checker-backend.onrender.com/api/health
+   Test health endpoint in your browser or with curl:
+   ```
+   https://ai-resume-checker-backend.onrender.com/api/health
    ```
 
    Expected response:
